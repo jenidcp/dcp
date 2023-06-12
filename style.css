@@ -1,0 +1,31 @@
+#titulo{
+    color:firebrick
+    
+}
+ 
+    
+
+p.especial{
+    color:rgb(8, 8, 8)
+}
+
+p.texto{
+    color:darkred
+}
+
+div p{
+    color:darkred
+}
+
+div h2{
+
+    color:brown
+}
+
+* {
+    font-size: 29px;
+}
+
+/*esto es muy dificil... */
+
+
