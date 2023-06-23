@@ -1,5 +1,6 @@
 console.log("hola david");
 
+
 // Obtener referencias a los elementos del formulario y a la lista de pedidos
 var inputCapitulo = document.getElementById("inputCapitulo");
 var btnAgregar = document.getElementById("btnAgregar");
@@ -23,6 +24,24 @@ btnAgregar.addEventListener("click", function() {
 
 
   
+// Función para calcular el total de la compra
+function calcularTotal() {
+  var cantidad = parseInt(document.getElementById('cantidad').value);
+  var precio = parseFloat(document.getElementById('precio').value);
+
+  var descuento = 0;
+  var total = 0;
+
+  if (cantidad >= 2) {
+      descuento = precio * 0.2;
+      total = (precio * cantidad) - descuento;
+  } else {
+      total = precio * cantidad;
+  }
+
+  document.getElementById('resultado').textContent = 'Total a pagar: $' + total.toFixed(2);
+  document.getElementById('resultado').classList.add('celeste');
+}
 
 
 
